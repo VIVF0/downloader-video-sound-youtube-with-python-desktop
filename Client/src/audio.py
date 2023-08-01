@@ -26,5 +26,5 @@ class Audio:
                 mp3_path = os.path.join(self.path, os.path.splitext(file)[0]+'.mp3') 
                 new_file = mp.AudioFileClip(mp4_path)  
                 new_file.write_audiofile(mp3_path)    
-                os.remove(mp4_path) 
-        print('Download Completo')
+                os.remove(mp4_path)
+        print('Download Completo do Audio')
