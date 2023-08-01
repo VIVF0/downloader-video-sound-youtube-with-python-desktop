@@ -18,7 +18,7 @@ Este é um repositório que contém um programa de interface gráfica para deskt
 
 Antes de começar, verifique se você possui os seguintes requisitos instalados:
 
-- Python 3.x: [Download Python](https://www.python.org/downloads/)
+- Python 3.11.4: [Download Python](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe)
 
 ## Como Usar
 
@@ -48,11 +48,9 @@ python app.py
 
 5. A interface gráfica do programa será exibida.
 
-6. Cole o link do vídeo do YouTube na caixa de texto e selecione o formato do download (vídeo ou áudio).
+6. Escolha a pasta onde será baixado o arquivo.
 
-7. Clique no botão "Baixar" para iniciar o download.
-
-8. O progresso do download será exibido na interface gráfica.
+7. Cole o link do vídeo do YouTube na caixa de texto e selecione o formato do download (vídeo ou áudio).
 
 ## Contribuição
 
@@ -106,7 +104,7 @@ This is a repository that contains a desktop graphical interface program develop
 
 Before getting started, make sure you have the following requirements installed:
 
-- Python 3.x: [Download Python](https://www.python.org/downloads/)
+- Python 3.x: [Download Python](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe)
 
 ## How to Use
 
@@ -136,11 +134,9 @@ python app.py
 
 5. The program's graphical interface will be displayed.
 
-6. Paste the YouTube video link in the text box and select the download format (video or audio).
+6. Choose the folder where the file will be downloaded.
 
-7. Click the "Download" button to start the download.
-
-8. The download progress will be displayed on the graphical interface.
+7. Paste the YouTube video link in the text box and select the download format (video or audio).
 
 ## Contributing
 
