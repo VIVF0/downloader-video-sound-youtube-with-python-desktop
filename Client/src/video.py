@@ -1,7 +1,5 @@
 from pytube import YouTube
 import os
-import ffmpeg
-import threading
 
 class Video:
     def __init__(self, url=None, path=None, resolution='1080p'):
