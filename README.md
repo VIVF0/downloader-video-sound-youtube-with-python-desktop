@@ -104,7 +104,7 @@ This is a repository that contains a desktop graphical interface program develop
 
 Before getting started, make sure you have the following requirements installed:
 
-- Python 3.x: [Download Python](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe)
+- Python 3.11.4: [Download Python](https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe)
 
 ## How to Use
 
