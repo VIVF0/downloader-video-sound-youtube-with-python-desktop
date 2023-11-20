@@ -2,7 +2,9 @@
 
 ![GitHub](https://img.shields.io/github/license/VIVF0/downloader-video-sound-youtube-with-python-desktop)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/VIVF0/downloader-video-sound-youtube-with-python-desktop)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/VIVF0/downloader-video-sound-youtube-with-python-desktop)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/VIVF0/downloader-video-sound-youtube-with-python-desktop)  
+
+[![Watch the video](https://github.com/VIVF0/downloader-video-sound-youtube-with-python-desktop/blob/main/Client/img/Downloader%20Youtube.png)](https://youtu.be/VNQ5AHLctsU)
 
 Este é um repositório que contém um programa de interface gráfica para desktop desenvolvido usando PyQt6 para fazer o download de vídeo ou áudio de um link de vídeo do YouTube. O programa utiliza a biblioteca pytube para realizar o download dos conteúdos do YouTube.
 
