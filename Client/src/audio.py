@@ -2,6 +2,7 @@ from pytube import YouTube
 from pytube import Playlist
 import re
 import os
+import time
 
 class Audio:
     def __init__(self,url=None,path=None):
@@ -17,13 +18,11 @@ class Audio:
         return self.__path
         
     def download_audio(self):
-        yt = YouTube(self.url)
-        ys = yt.streams.filter(only_audio=True).first().download(self.path)
-        """for file in os.listdir(self.path):
-            if re.search('mp4', file):                                 
-                mp4_path = os.path.join(self.path , file)   
-                mp3_path = os.path.join(self.path, os.path.splitext(file)[0]+'.mp3') 
-                new_file = mp.AudioFileClip(mp4_path)  
-                new_file.write_audiofile(mp3_path)    
-                os.remove(mp4_path)"""
-        print('Download Completo do Audio')
+        try:
+            time_now = int(time.time())
+            yt = YouTube(self.url)
+            ys = yt.streams.filter(only_audio=True).first()
+            ys.download(output_path=self.path, filename=f'{time_now}{ys.default_filename}')
+            return True, 'Download Completo do Audio'
+        except:
+            return False, 'Falha no Download do Audio'
