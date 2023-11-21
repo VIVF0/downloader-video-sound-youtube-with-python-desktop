@@ -13,19 +13,19 @@ class Window(tk.Tk):
         self.title("Downloader Youtube")
         self.geometry("300x250")
 
-        self.path = None
+        self.path = ''
 
         self.input = tk.Entry(self, width=30)
         self.input.pack(pady=10, padx=10)
 
         select_folder_button = tk.Button(self, text="Selecionar pasta", command=self.select_directory)
-        select_folder_button.pack(pady=5)
+        select_folder_button.pack(pady=8)
 
         audio_button = tk.Button(self, text="Download Audio", command=self.download_audio)
-        audio_button.pack(pady=5)
+        audio_button.pack(pady=8)
 
         video_button = tk.Button(self, text="Download Video", command=self.download_video)
-        video_button.pack(pady=5)
+        video_button.pack(pady=8)
 
         self.label = tk.Label(self, text=f'Path: {self.path}')
         self.label.pack(pady=10)
@@ -108,7 +108,7 @@ class SuccessPage(tk.Toplevel):
 
     def show_main_window(self):
         self.destroy()
-        self.master.deiconify()  # Exibe a janela principal
+        self.master.deiconify()
         
 class FailurePage(tk.Toplevel):
     def __init__(self, window):
@@ -129,7 +129,7 @@ class FailurePage(tk.Toplevel):
 
     def show_main_window(self):
         self.destroy()
-        self.master.deiconify()  # Exibe a janela principal
+        self.master.deiconify()
 
 if __name__ == "__main__":
     app = Window()
