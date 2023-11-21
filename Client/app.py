@@ -5,6 +5,8 @@ import threading
 import pathlib
 from PIL import Image, ImageTk 
 
+directory = pathlib.Path('img')
+
 class Window(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -92,9 +94,9 @@ class SuccessPage(tk.Toplevel):
         super().__init__(window)
         self.title("Sucesso no Download")
         self.geometry("250x250")
-        self.directory = pathlib.Path('img')
+        self.iconbitmap(f'{directory}/youtube-logo.ico')
         
-        image = Image.open(f'{self.directory}/true.png').resize(size=(150, 150))
+        image = Image.open(f'{directory}/true.png').resize(size=(150, 150))
         photo = ImageTk.PhotoImage(image)
 
         image_label = tk.Label(self, image=photo)
@@ -113,9 +115,9 @@ class FailurePage(tk.Toplevel):
         super().__init__(window)
         self.title("Falha no Download")
         self.geometry("250x250")
-        self.directory = pathlib.Path('img')
+        self.iconbitmap(f'{directory}/youtube-logo.ico')
         
-        image = Image.open(f'{self.directory}/false.webp').resize(size=(150, 150))
+        image = Image.open(f'{directory}/false.webp').resize(size=(150, 150))
         photo = ImageTk.PhotoImage(image)
 
         image_label = tk.Label(self, image=photo)
@@ -131,4 +133,5 @@ class FailurePage(tk.Toplevel):
 
 if __name__ == "__main__":
     app = Window()
+    app.iconbitmap(f'{directory}/youtube-logo.ico')
     app.mainloop()
